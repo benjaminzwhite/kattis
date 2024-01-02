@@ -2,19 +2,25 @@
 
 Solutions to Kattis competitive programming exercises.
 
-I also write "editorials"/blogposts for particularly interesting exercises that I solve (see list below).
+I also write "editorials" for particularly interesting exercises that I solve (see list in below section).
 
 Many of the non-trivial exercises have a `NOTES` comment in source file with thought process/reasoning/observations.
 
+I have also code golfed quite a few answers to reach Rank 1 on the overall or Python 3 language leaderboard, or to optimise performance for the speed leaderboard. I have not included these submissions in this repo, but feel free to PM me if you want to see them or just ask for a hint (or if you beat my score!).
+
 ## General notation
 
-I try to keep same variable names as used in the Kattis problem statement. Otherwise I try to stick to the following:
+I try to keep same variable names as used in the Kattis problem statement, unless they are really confusing.
+
+Otherwise I try to stick to the following notation when solving exercises:
+<details>
+<summary>Click to expand general notation for variables</summary>
 
 ```
 s : a string
 c : a single character
 d : a dictionary/hashmap
-res : whatever the final result is will be stored here
+res : whatever the final result is
 inps : if inputs require some kind of processing
 curr,prev,best : when doing some kind of updating of current vs. previous vs. overall best values
 cnt : when counting something
@@ -35,6 +41,7 @@ ss,mm,hh : when working with dates and times
 hi,lo,mid : when binary searching
 PRECOMPUTE,LOOKUP,REF : in exercises with multiple queries of a precomputed answer
 ```
+</details>
 
 ## Editorials
 
