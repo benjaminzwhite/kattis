@@ -15,8 +15,8 @@ probability
 - The inputs $`n`$ and $`k`$ correspond to $`n`$ players who all start with the **same** number of lives $`k`$.
 - So all $`n`$ players are initially indistinguishable; therefore we can analyse any single player since they are all equally likely to be the Winner as defined below.
 - A game ends with a win when there is a Winner. How is a Winner defined? We read: "when only one player remains"
-- So a Winner is the last-man-standing, i.e. there must be a final round, $`R_{final}`,whereexactly1playerhasmorethan0livesandallother, where exactly 1 player has more than 0 lives and all other `n - 1`$ players have 0 lives.
-- This round $`R_{final}`canbeanyoftheroundsfrom can be any of the rounds from `k`(sinceneedatleast (since need at least `k`roundstoknockoutsomeplayers)to rounds to knock out some players) to `\infty`$ so we will consider these summation limits later.
+- So a Winner is the last-man-standing, i.e. there must be a final round, $`R_{final}`$, where exactly 1 player has more than 0 lives and all other $`n - 1`$ players have 0 lives.
+- This round $`R_{final}`$ can be any of the rounds from $`k`$ (since need at least $`k`$ rounds to knock out some players) to $`\infty`$ so we will consider these summation limits later.
 
 ### Probability calculation
 
@@ -24,26 +24,26 @@ In what follows, we call the current round $`r`$.
 
 We are focusing on any individual single player, without loss of generality, as discussed above.
 
-First, the probability the player gets knocked out (i.e. loses the last of his $`k`lives)incurrentround lives) in current round `r`havingstartedthegamewith having started the game with `k`$ lives is given by:
+First, the probability the player gets knocked out (i.e. loses the last of his $`k`$ lives) in current round $`r`$ having started the game with $`k`$ lives is given by:
 
-1. choose $`k - 1`roundstolosein,from rounds to lose in, from `r - 1`previousrounds,in previous rounds, in `\binom{r-1}{k-1}`$ ways
-2. lose $`k - 1`timeswithprobability: times with probability: `(1-p)^{(k-1)}`$
-3. win  $`(r-1) - (k-1) = r-k`timeswithprobability: times with probability: `p^{(r-k)}`$
+1. choose $`k - 1`$ rounds to lose in, from $`r - 1`$ previous rounds, in $`\binom{r-1}{k-1}`$ ways
+2. lose $`k - 1`$ times with probability: $`(1-p)^{(k-1)}`$
+3. win  $`(r-1) - (k-1) = r-k`$ times with probability: $`p^{(r-k)}`$
 4. then finally lose exactly 1 time (this round) with probability: $`(1-p)`$
 
 This gives
 
 $`\binom{r-1}{k-1} \times (1-p)^{(k-1)} \times p^{(r-k)} \times (1-p) = \binom{r-1}{k-1} \times (1-p)^k \times p^{(r-k)}`$ 
 
-Second, the probability the player is knocked out *before this current round r* is the sum of the above knockout probabilities, for each all rounds $`r_acc`satisfying: satisfying: `k \leq r_acc < r`wherethelowerlimitis where the lower limit is `k`roundssinceanyplayerneedatleast rounds since any player need at least `k`roundstolose rounds to lose `k`$ lives.
+Second, the probability the player is knocked out *before this current round r* is the sum of the above knockout probabilities, for each all rounds $`r\prime`$ satisfying: $`k \le r\prime < r`$ where the lower limit is $`k`$ rounds since any player need at least $`k`$ rounds to lose $`k`$ lives.
 
-Finally, the probability that all $`n - 1`$ other players are knocked out *before this current round r* is therefore the above summed probability multiplied $`n - 1`timessincethegames/outcomesforthese times since the games/outcomes for these `n - 1`$ other players are independent.
+Finally, the probability that all $`n - 1`$ other players are knocked out *before this current round r* is therefore the above summed probability multiplied $`n - 1`$ times since the games/outcomes for these $`n - 1`$ other players are independent.
 
 The total game result is the sum over paths i.e. for all possible number of game rounds.
 
 The upper limit is infinite: for programming implementation, we just take a `MAX_ROUNDS` such that the value is no longer changing within `1e-6` as per problem statement.
 
-The lower limit is $`k`itselfsincenogamecanlastfewerthan itself since no game can last fewer than `k`$ rounds, as explained earlier.
+The lower limit is $`k`$ itself since no game can last fewer than $`k`$ rounds, as explained earlier.
 
 ## AC code
 
@@ -61,7 +61,7 @@ p = float(p)
 # store total SINGLE player win probability
 res = 0
 
-# total SINGLE player probability of losing at any round r_acc < r where r is current round
+# total SINGLE player probability of losing at any round r' < r where r is current round
 lose_before_this_round = 0 
 for r in range(k, MAX_ROUNDS):
     lose_this_round = comb(r-1, k-1) * (1-p)**k * p**(r-k)
