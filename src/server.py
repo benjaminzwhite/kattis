@@ -4,11 +4,12 @@
 # CP4: 2.2l, List/Queue/Deque
 # NOTES:
 """
-If you want to use Python next() then can do something like this.
-CARE! Make sure to use n as default argument for next() for cases where all the elements can be used:
+If you want to use Python next() then can do something like this:
 
 from itertools import accumulate
 
+# CARE!
+# Make sure to use n as default argument for next() for cases where all the tasks can be completed.
 res = next((i for i,x in enumerate(accumulate(tasks)) if x > T), n)
 
 print(res)
