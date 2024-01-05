@@ -1,12 +1,12 @@
 # Kattis
 
-Solutions to Kattis competitive programming exercises.
+Solutions to Kattis competitive programming exercises, mainly in Python 3. 
 
-I also write "editorials" for particularly interesting exercises that I solve (see list in below section).
+I also write detailed solution pages for particularly interesting exercises that I solve (see list with links in below section).
 
 Many of the non-trivial exercises have a `NOTES` comment in source file with thought process/reasoning/observations.
 
-I have also code golfed quite a few answers to reach Rank 1 on the overall or Python 3 language leaderboard, or to optimise performance for the speed leaderboard. I have not included these submissions in this repo, but feel free to PM me if you want to see them or just ask for a hint (or if you beat my score!).
+PM me with any comments or questions.
 
 ## General notation
 
@@ -43,9 +43,9 @@ PRECOMPUTE,LOOKUP,REF : in exercises with multiple queries of a precomputed answ
 ```
 </details>
 
-## Editorials
+## Exercises with detailled solution pages
 
-Exercises which I found particularly interesting for some reason, and decided to write my own editorial:
+Exercises which I found particularly interesting for some reason, and decided to write-up a solution page:
 
 - Ocean Monument
 - Lopsided Lineup
