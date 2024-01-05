@@ -35,7 +35,7 @@ This gives
 
 $`\binom{r-1}{k-1} \times (1-p)^{(k-1)} \times p^{(r-k)} \times (1-p) = \binom{r-1}{k-1} \times (1-p)^k \times p^{(r-k)}`$ 
 
-Second, the probability the player is knocked out *before this current round r* is the sum of the above knockout probabilities, for each all rounds $`r\prime`$ satisfying: $`k \leq r\prime < r`$ where the lower limit is $`k`$ rounds since any player need at least $`k`$ rounds to lose $`k`$ lives.
+Second, the probability the player is knocked out *before this current round r* is the sum of the above knockout probabilities, for each all rounds $`r\prime`$ satisfying: $`k \le r\prime < r`$ where the lower limit is $`k`$ rounds since any player need at least $`k`$ rounds to lose $`k`$ lives.
 
 Finally, the probability that all $`n - 1`$ other players are knocked out *before this current round r* is therefore the above summed probability multiplied $`n - 1`$ times since the games/outcomes for these $`n - 1`$ other players are independent.
 
