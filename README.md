@@ -43,7 +43,7 @@ PRECOMPUTE,LOOKUP,REF : in exercises with multiple queries of a precomputed answ
 ```
 </details>
 
-## Exercises with detailled solution pages
+## Exercises with detailed solution pages
 
 Exercises which I found particularly interesting for some reason, and decided to write-up a solution page:
 
