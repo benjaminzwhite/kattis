@@ -49,19 +49,19 @@ Exercises which I found particularly interesting for some reason, and decided to
 
 - [Lucky Draw - kattis: luckydraw](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/luckydraw.md)
 - [Swap Space - kattis: swapspace](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/swapspace.md)
+- [Sequential Manufacturing - kattis: sequentialmanufacturing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/sequentialmanufacturing.md)
+- [Exits in Excess - kattis: exitsinexcess](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/exitsinexcess.md)
 
 <details>
-<summary>Exercises to write-up</summary>
+<summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
 - Lopsided Lineup
-- Exits in Excess
 - Srednji
 - Factorial Power
 - Wolf
 - ETA
 - Ada Loveslaces
-- Sequential Manufacturing
 - Please, Go First
 - Accounting aka Bokforing
 - Distance
