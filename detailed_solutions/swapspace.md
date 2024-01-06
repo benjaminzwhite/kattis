@@ -32,13 +32,13 @@ The problem is asking: **"What is the smallest volume that this extra glass need
 
 ### Reasoning
 
-A greedy approach works: you start with the glasses which, when broken, are rebuilt as **bigger than before** i.e. which have `new >= old` because these ones will result in **spare/extra capacity** when you re-pour the water from the temporary glass back.
+A greedy approach works: you start with the glasses which, when broken, are rebuilt as **bigger than before** i.e. which have `new > old` because these ones will result in **spare/extra capacity** when you re-pour the water from the temporary glass back.
 
 e.g. For a given glass with `old = 100` and `new = 345`, then you will be ending up with a new glass of capacity `345` but only contributing `100` units of water to pour in to it.
 
 In effect, this given glass can be thought of as **producing `345 - 100 = 245` spare capacity for water.**
 
-On the other hand, a glass with `old > new` can be thought of as **consuming, rather than producing** spare capacity for water.
+On the other hand, a glass with `old >= new` can be thought of as **consuming, rather than producing** spare capacity for water.
 
 Now, you sort the spare capacity **producing** `(old, new)` pairs by **increasing** `old`, since you want to greedily try to move the smallest old water
 amounts because that is what requires extra glass size. By trying in this order, you never create a large extra glass before you need it (and
@@ -58,7 +58,7 @@ consume_spare_capacity = []
 
 for _ in range(n):
     old, new = map(int, input().split())
-    if old < new: # WA when use <=
+    if old < new: # CARE! WA when use <=
         produce_spare_capacity.append((old,new))
     else:
         consume_spare_capacity.append((old,new))
