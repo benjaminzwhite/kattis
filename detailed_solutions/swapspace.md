@@ -32,7 +32,7 @@ The problem is asking: **"What is the smallest volume that this extra glass need
 
 ### Reasoning
 
-A greedy approach works: you start with the glasses which, when broken, are rebuilt as **bigger than before** i.e. which have `new > old` because these ones will result in **spare/extra capacity** when you re-pour the water from the temporary glass back.
+A greedy approach works: you start with the glasses which, when broken, are rebuilt as **bigger than before** i.e. which have `old < new` because these ones will result in **spare/extra capacity** when you re-pour the water from the temporary glass back.
 
 e.g. For a given glass with `old = 100` and `new = 345`, then you will be ending up with a new glass of capacity `345` but only contributing `100` units of water to pour in to it.
 
