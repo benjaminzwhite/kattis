@@ -48,13 +48,13 @@ PRECOMPUTE,LOOKUP,REF : in exercises with multiple queries of a precomputed answ
 Exercises which I found particularly interesting for some reason, and decided to write-up a solution page:
 
 - [Lucky Draw - kattis: luckydraw](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/luckydraw.md)
+- [Swap Space - kattis: swapspace](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/swapspace.md)
 
 <details>
 <summary>Exercises to write-up</summary>
   
 - Ocean Monument
 - Lopsided Lineup
-- Swap Space
 - Exits in Excess
 - Srednji
 - Factorial Power
