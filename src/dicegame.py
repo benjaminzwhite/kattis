@@ -28,15 +28,12 @@ else:
 
 # Second approach
 # If you work out the exp_value using Gauss sum -> a+b * (b-a+1)//2 we find that:
-# exp value = g1+g2+g3+g4/2 ie sum of inputs is all that is needed
+# exp value = (g1+g2+g3+g4 / 2) i.e. the sum of inputs is all that is needed
 """
-G = sum(map(int,input().split())) # dont need to divide by 2 since E has same factor of 2 also
-E = sum(map(int,input().split()))
+G = sum(map(int, input().split())) # don't need to divide by 2 since G & E both have same factor of 2
+E = sum(map(int, input().split()))
 
-if G > E:
-	print("Gunnar")
-elif G == E:
-	print("Tie")
-else:
-	print("Emma")
+if G > E:print("Gunnar")
+elif G == E:print("Tie")
+else:print("Emma")
 """
