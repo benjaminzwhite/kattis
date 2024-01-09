@@ -52,6 +52,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Sequential Manufacturing - kattis: sequentialmanufacturing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/sequentialmanufacturing.md)
 - [Exits in Excess - kattis: exitsinexcess](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/exitsinexcess.md)
 - [Please, Go First - kattis: pleasegofirst](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/pleasegofirst.md)
+- [Farey Sums - kattis: fareysums](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/fareysums.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -66,6 +67,5 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Accounting aka Bokforing
 - Distance
 - Dams in Distress
-- Farey Sums
   
 </details>
