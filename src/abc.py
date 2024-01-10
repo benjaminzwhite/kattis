@@ -1,5 +1,5 @@
-# Ants
-# https://open.kattis.com/problems/ants
+# ABC
+# https://open.kattis.com/problems/abc
 # TAGS: basic
 # CP4: 1.4f, Function
 # NOTES:

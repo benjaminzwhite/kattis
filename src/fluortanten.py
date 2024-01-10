@@ -1,5 +1,5 @@
-# Alphabet Spam
-# https://open.kattis.com/problems/alphabetspam
+# Fluortanten
+# https://open.kattis.com/problems/fluortanten
 # TAGS: array
 # CP4: 2.2a, 1D Array, Medium
 # NOTES:
