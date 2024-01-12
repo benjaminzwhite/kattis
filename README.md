@@ -53,12 +53,12 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Exits in Excess - kattis: exitsinexcess](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/exitsinexcess.md)
 - [Please, Go First - kattis: pleasegofirst](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/pleasegofirst.md)
 - [Farey Sums - kattis: fareysums](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/fareysums.md)
+- [Lopsided Lineup - kattis: lopsidedlineup](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/lopsidedlineup.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
-- Lopsided Lineup
 - Srednji
 - Factorial Power
 - Wolf
