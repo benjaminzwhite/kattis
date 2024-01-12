@@ -67,5 +67,16 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Accounting aka Bokforing
 - Distance
 - Dams in Distress
+- Johnny Applesack
+- Left and Right
+- Accounting aka Bokforing
+- Digit Division
+- Canvas Line
+- Delft Distance
+- Burizon Fort
+- The Paladin
+- LCM Pair Sum
+- Jumping Yoshi
+- Integer Estate Agent
   
 </details>
