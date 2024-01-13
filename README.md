@@ -2,7 +2,7 @@
 
 Solutions to Kattis competitive programming exercises, mainly in Python 3. 
 
-I also write detailed solution pages for particularly interesting exercises that I solve (see list with links in below section).
+I also write [detailed solution pages for particularly interesting exercises](#exercises-with-detailed-solution-pages) that I solve (see list with links in below section).
 
 Many of the non-trivial exercises have a `NOTES` comment in source file with thought process/reasoning/observations.
 
@@ -42,6 +42,7 @@ hi,lo,mid : when binary searching
 PRECOMPUTE,LOOKUP,REF : in exercises with multiple queries of a precomputed answer
 ```
 </details>
+
 
 ## Exercises with detailed solution pages
 
