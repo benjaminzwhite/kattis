@@ -54,18 +54,18 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Please, Go First - kattis: pleasegofirst](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/pleasegofirst.md)
 - [Farey Sums - kattis: fareysums](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/fareysums.md)
 - [Lopsided Lineup - kattis: lopsidedlineup](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/lopsidedlineup.md)
+- [Distance - kattis: distance](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/distance.md)
+- [Factorial Power - kattis: factorialpower](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/factorialpower.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
 - Srednji
-- Factorial Power
 - Wolf
 - ETA
 - Ada Loveslaces
 - Accounting aka Bokforing
-- Distance
 - Dams in Distress
 - Johnny Applesack
 - Left and Right
