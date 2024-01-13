@@ -2,7 +2,7 @@
 
 [Problem statement on Kattis](https://open.kattis.com/problems/factorialpower)
 
-A good number theory exercise - we are going to make use of [Legendre's formula](https://en.wikipedia.org/wiki/Legendre%27s_formula) which can be used to find the largest power of a prime `p` that divides `n!`.
+A good number theory exercise - we are going to make use of [Legendre's formula](https://en.wikipedia.org/wiki/Legendre%27s_formula) which can be used to find the largest power of a prime `p` that divides `m!`.
 
 ## Tags
 
