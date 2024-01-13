@@ -12,9 +12,11 @@ mathematics, number theory
 
 First we factorize `n` (see *Implementation note* below for why you should do this step first!)
 
-Then do use Legendre formula on the primes that appear in $`n = p_{1}^{e_{1}} \times p_{2}^{e_{2}} \times p_{3}^{e_{3}} ...`$ - call these values the `legendre[p]` scores for each of the prime factors of `n`.
+Then we use Legendre formula on the primes that appear in $`n = p_{1}^{e_{1}} \times p_{2}^{e_{2}} \times p_{3}^{e_{3}} ...`$ - call these values the `legendre[p]` scores for each of the prime factors of `n`.
 
-Then the result will be the smallest of all the ratios between exponents across the factors of `n`. An example will be clearer:
+Then the result will be the smallest of all the ratios between exponents across the factors of `n`. Or if you prefer, you can keep raising `n` to larger and larger powers until it ends up with any exponent, on any of its prime factors, that is greater than the value that appears in the `legendre[p]` scores of the input value of `m`.
+
+An example will be clearer:
 
 Suppose `n = 151263` which factorizes as `n = 3**2 * 7**5`, with prime factors `p1 = 3` and `p2 = 7`.
 
@@ -24,7 +26,7 @@ However, you also need to check `Legendre(m, 7)` - suppose it is `= 11`, i.e the
 
 Then this constrains `n**k` since now you **CANNOT** raise `n` to the earlier-found very large value of `500`, since it would lead to the `7**5` contribution also being raised to `**500` i.e. `7**5 ** 500 = 7**2500` which is greater than `11`, the actual exponent of `7` in `m!`.
 
-So you are constrained by the smallest of these possible values; and the max you can raise `7**5` to is `**2` since `7**5 **2 = 7**10` and here `10 < 11`.
+So you are constrained by the smallest of these possible values: the max you can raise `7**5` to is `**2` since `7**5 **2 = 7**10` and here `10 <= 11`, whereas if you tried raising `7**5` to `**3` you would get `7**5 **3 = 7**15` and here `15 > 11` so this number cannot divide `m!`.
 
 In other words, it is constrained by the floor of `(legendre[p] / exponent_of_p_in_n)` across all the primes appearing in the factorization of `n`.
 
@@ -34,7 +36,7 @@ A very important performance observation is as follows:
 
 If you do the Legendre calculation on **all the primes** up to `10**7`, and then *afterwards* you do the prime factorization of `n` in order to compare the primes in `n` to the Legendre results, you will get TLE (in Python at least).
 
-**But clearly you only need to do the Legendre calculation on the primes that actually appear in the factorization of `n`. So factorize n first, then do Legendre theorem on the primes that appear in n = p1**e1 * p2**e2 etc. This leads to much smaller number of required Legendre calculations to perform.**
+**But clearly you only need to do the Legendre calculation on the primes that actually appear in the factorization of `n`. So factorize `n` first, then do Legendre formula on the primes that appear in `n = p1**e1 * p2**e2 ...` etc. This leads to much smaller number of required Legendre calculations to perform.**
 
 
 ## AC code
