@@ -1,5 +1,5 @@
-# Sort Two Numbers
-# https://open.kattis.com/problems/sorttwonumbers
+# CD
+# https://open.kattis.com/problems/cd
 # TAGS: basic
 # CP4: 2.3d, Hash Table (set)
 # NOTES:

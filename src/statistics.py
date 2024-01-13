@@ -7,7 +7,7 @@ import sys
 
 for case, line in enumerate(sys.stdin, 1):
 	_, *xs = map(int, line.split())
-	
+
 	mn, mx = min(xs), max(xs)
-	
+
 	print(f"Case {case}: {mn} {mx} {mx - mn}")

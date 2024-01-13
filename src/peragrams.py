@@ -1,5 +1,5 @@
-# Recount
-# https://open.kattis.com/problems/recount
+# Peragrams
+# https://open.kattis.com/problems/peragrams
 # TAGS: logic
 # CP4: 6.7b, Palindrome (Checking)
 # NOTES:
