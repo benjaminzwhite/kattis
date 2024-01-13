@@ -1,4 +1,4 @@
-# ICPC
+# ICPC Awards
 # https://open.kattis.com/problems/icpcawards
 # TAGS: basic
 # CP4: 2.3d, Hash Table (set)
