@@ -6,7 +6,7 @@
 P = int(input())
 
 for _ in range(P):
-	K, base, n=map(int, input().split())
+	K, base, n = map(int, input().split())
 	res = 0
 	while n:
 		res += (n % base)**2
