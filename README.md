@@ -57,6 +57,8 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Lopsided Lineup - kattis: lopsidedlineup](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/lopsidedlineup.md)
 - [Distance - kattis: distance](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/distance.md)
 - [Factorial Power - kattis: factorialpower](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/factorialpower.md)
+- [Burizon Fort - kattis: burizonfort](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/burizonfort.md)
+- [Johnny Applesack - kattis: applesack](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/applesack.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -68,13 +70,11 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Ada Loveslaces
 - Accounting aka Bokforing
 - Dams in Distress
-- Johnny Applesack
 - Left and Right
 - Accounting aka Bokforing
 - Digit Division
 - Canvas Line
 - Delft Distance
-- Burizon Fort
 - The Paladin
 - LCM Pair Sum
 - Jumping Yoshi
