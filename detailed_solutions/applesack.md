@@ -20,7 +20,7 @@ of option 2 reduces to studying how to move a pile of apples `1` single distance
 Now:
 
 - It will require `ceil(n/k)` trips to move all the apples from `d=0` to `d=1`; each trip costs `1` apple cost, so total cost is `ceil(n/k)` apples.
-- **This is the key greedy observation step:** you are now in a new initial condition with `n_new = n - ceil(n/k)` apples and you have gained +1 total distance. **If `n_new >= k` then you have made a good choice since option 1 is still available (you can fill a k-sack) but now you will be able to perform it with +1 total distance already baseline.**
+- **This is the key greedy observation step:** you are now in a new initial condition with `n_new = n - ceil(n/k)` apples and you have gained +1 total distance. **If `n_new > k` then you have made a good choice since option 1 is still available (you can fill a k-sack) but now you will be able to perform it with +1 total distance already baseline.**
 - So keep performing option 2 until you first have `n_new <= k` apples then walk the rest of the distance with your last k-sack filled with `n_new` apples.
 
 ### Implementation notes
