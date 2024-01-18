@@ -59,6 +59,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Factorial Power - kattis: factorialpower](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/factorialpower.md)
 - [Burizon Fort - kattis: burizonfort](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/burizonfort.md)
 - [Johnny Applesack - kattis: applesack](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/applesack.md)
+- [Accounting a.k.a. Bokforing - kattis: bokforing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/bokforing.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -68,10 +69,8 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Wolf
 - ETA
 - Ada Loveslaces
-- Accounting aka Bokforing
 - Dams in Distress
 - Left and Right
-- Accounting aka Bokforing
 - Digit Division
 - Canvas Line
 - Delft Distance
