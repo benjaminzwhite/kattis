@@ -61,6 +61,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Johnny Applesack - kattis: applesack](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/applesack.md)
 - [Accounting a.k.a. Bokforing - kattis: bokforing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/bokforing.md)
 - [Jumping Yoshi - kattis: jumpingyoshi](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/jumpingyoshi.md)
+- [Ada Loveslaces - kattis: adaloveslaces](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/adaloveslaces.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -69,7 +70,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Srednji
 - Wolf
 - ETA
-- Ada Loveslaces
 - Dams in Distress
 - Left and Right
 - Digit Division
