@@ -52,18 +52,18 @@ There is potential for off-by-one errors: The wanted result is the **maximum dis
 from collections import defaultdict
 
 N = int(input())
-*xs, = map(int, input().split())
+xs = list(map(int, input().split()))
 
 as_source_scores = defaultdict(list)
 as_target_scores = defaultdict(list)
-for i,x in enumerate(xs):
-    target_score = i-x
-    source_score = i+x
+for i, x in enumerate(xs):
+    target_score = i - x
+    source_score = i + x
 
-    if target_score >= 0: # the min possible value of 'i+x' is when i == 0 and x == 0
+    if target_score >= 0: # the min possible value of 'i + x' is when i == 0 and x == 0
         as_target_scores[target_score].append(i)
     
-    if source_score <= N-1: # the max posible value of 'j-y' is when j == N-1 and y == 0 
+    if source_score <= N - 1: # the max posible value of 'j - y' is when j == N - 1 and y == 0 
         as_source_scores[source_score].append(i)
 
 
@@ -85,12 +85,12 @@ while stk:
     
     # find which vertices j have TARGET SCORE = i+x
     # try any edge from this SOURCE i to TARGET j:
-    for j in as_target_scores[curr_i+xs[curr_i]]:
+    for j in as_target_scores[curr_i + xs[curr_i]]:
         stk.append(j)
     
     # find which vertices k have SOURCE SCORE == i-x
     # try any edge from OTHER SOURCES k to THIS TARGET i
-    for k in as_source_scores[curr_i-xs[curr_i]]:
+    for k in as_source_scores[curr_i - xs[curr_i]]:
         stk.append(k)
 
 print(res)
