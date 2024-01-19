@@ -60,6 +60,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Burizon Fort - kattis: burizonfort](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/burizonfort.md)
 - [Johnny Applesack - kattis: applesack](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/applesack.md)
 - [Accounting a.k.a. Bokforing - kattis: bokforing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/bokforing.md)
+- [Jumping Yoshi - kattis: jumpingyoshi](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/jumpingyoshi.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -76,7 +77,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Delft Distance
 - The Paladin
 - LCM Pair Sum
-- Jumping Yoshi
 - Integer Estate Agent
   
 </details>
