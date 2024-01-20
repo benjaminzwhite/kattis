@@ -4,6 +4,12 @@
 
 This is a really interesting recursive/combinatorial generation problem. I ended up solving it in 2 different ways - the first approach is recursive, the second is combinatorial (I've included both solutions consecutively on this page).
 
+---
+
+**IMPORTANT: I noticed after writing my solution notes that I label the eyelets from `1 -> N` on BOTH sides of the shoe, while the problem author uses `0,2,4...` and `1,3,5,...` for the left and right side for a total of `2 * N` positions. Hopefully this does not cause too much confusion (I think mine is much clearer - you can think of my labelling of positions as e.g. `1 right`, `6 left` etc.)**
+
+---
+
 Note (see code where this comment will become clearer):
 
 While solving I noticed that it also - in Python at least - requires a performant solution as the input sizes have up to 100 `L` queries, and `N` can be up to `9`. I found that for the `N = 9` case there are `64069` possible length values, which would mean possibly up to `100 * 64069` queries. So you can't just naively re-compute every query one by one, instead I do the following precomputation:
@@ -111,39 +117,44 @@ while True:
 
 You can also generate all the possible lacing patterns combinatorially. In what follows, everything else is as before as in the previous section; I'll focus on the combinatorial logic.
 
-The idea is to try all possible patterns of the form `1 | some permutation of the numbers {2,3,...,N-1} | N`.
+The idea is to try all possible patterns of the form `1 | any permutation of any subset of the numbers {2,3,...,N-1} | N`.
 
 **Note: it is important to note that a single pattern, such as `1 | 6 3 4 | 7` may have MULTIPLE "interpretations" when viewed as a lacing pattern.** For example in the above, you can only move from position `4 -> 7` by going "across" since the distance `7 - 4 == +3` is not equal to `+/- 1`. However, the move from position `3 -> 4` could be **either** an "across" move, **or a "same-side" +1 move.** The walkthrough below should make these 2 cases clearer.
 
-Worked example:
+If say `N = 9`, then a lace pattern is combinatorially obtained as follows:
 
-If e.g. `N = 7`, then a lace pattern is combinatorially obtained as follows:
-
-- You must have start with `1` and end with `N=7` in the pattern.
-- You can have *any number* of additional terms i.e. these are the "intermediate positions" between `1` and `7` that are used.
-- For each choice of additional terms e.g. `1| {2,4,5} | 7` you can **permute the middle part** in all possible ways.
+- You must have start with `1` and end with `N=9` in the pattern.
+- You can have *any number* of additional terms i.e. these are the "intermediate positions" between `1` and `9` that are used.
+- For each choice of additional terms e.g. `1| {2,4,5} | 9` you can **permute the middle part** in all possible ways.
 
 For each such final sequence obtained, **you may be able to interpret the pattern in more than one way:**
 
-E.g. for a final sequence `1 | 2 5 4 | 7` then picturing the lace being threaded pairwise from `1 -> 2` then `2 -> 5` then `5 -> 4` then `4 -> 7`:
+E.g. for a final sequence `1 | 2 5 4 | 9` then picturing the lace being threaded pairwise from `1 -> 2` then `2 -> 5` then `5 -> 4` then `4 -> 9`:
 
 1. you can **always** interpret any pair as doing an "across move". This corresponds to the left/right positions in the pair being on opposite sides of the shoe. For example, `2 -> 5 : across` means going from position `2` on one side of shoe to position `5` on the other side. 
-2. you can **sometimes** interpret a pair as doing a "same-side move". This corresponds to the left/right positions in the pair being on **the same side** of the shoe. **You can only interpret a pair this way if the values are within +/-1 of each other**.
+2. you can **sometimes** interpret a pair as doing a "same-side move". This corresponds to the left/right positions in the pair being on **the same side** of the shoe. **You can only interpret a pair this way if the values are within +/-1 of each other** so for our current example, only the pairs `1 -> 2` and `5 -> 4` could be interpreted in the 2 possible ways.
 
-As a full case, with `N=3`, the pattern `1 | 2 | 3` for example has several interpretations (draw them to be 100% clear):
-- 1 to 2 to 3 all on the same side
-- 1 cross to 2, then move from 2 to 3 on the same side
-- 1 cross to 2, then cross back to 3
-- 1 same-side to 2, then cross back to 3
+Finally, for all possible patterns and all possible interpretations of each pattern, you can compute the lengths that it produces and add these to your `PRECOMPUTE` list as we did previously for the recursive approach.
+
+---
+
+As a full worked example, with `N=3` there are only two possible combinatorial patterns (draw them to be 100% clear):
+
+The pattern `1 | | 3` with no intermediate positions. This has only 1 valid interpreation:
 - 1 cross to 3
 
-So for all possible patterns, and all possible "Interpretations" of each pattern, you can compute the lengths that it produces in and add to `PRECOMPUTE`.
+The other pattern `1 | 2 | 3` which uses `2` as an intermediate position. This has 4 interpretations:
+- 1 same-side to 2, then 2 same-side to 3
+- 1 same-side to 2, then 2 cross to 3
+- 1 cross to 2, then 2 same-side to 3
+- 1 cross to 2, then 2 cross to 3
+
+
 
 ## AC code - second approach, combinatorial
 
 ```python
 from itertools import combinations, permutations
-
 
 N, d, s, t, fmin, fmax = map(int, input().split())
 
@@ -152,19 +163,19 @@ N, d, s, t, fmin, fmax = map(int, input().split())
 COMB_PRECOMPUTE = []
 
 # starting at position 1 and ending at N:
-# can choose to visit up to N-2 intermediate positions in between these 2 positions
+# can choose to visit from 0 up to N-2 of the possible intermediate positions in between these 2 positions
 for intermediate_positions in range(0, N-2 + 1):
-	# select the intermediate_positions that will be used in the current batch of patterns
+	# select the subset of intermediate_positions that will be used in the current batch of patterns
 	for comb in combinations(range(2, N), intermediate_positions):
-		# permute the "middle positions" between 1 and N in all possible ways -> this corresponds to generating
+		# permute the intermediate positions between 1 and N in all possible ways -> this corresponds to generating
 		# all possible valid paths through the current list of positions
 		# CARE! at this point we are generating the patterns of numbers, we are NOT "interpreting" them yet.
-		# so for example pattern 1 | 2 5 4 | 7 will appear but this corresponds to several actual lacing patterns
+		# so for example pattern 1 | 2 5 4 | 9 will appear but this will corresponds to several actual lacing patterns ...
 		for p in permutations(comb):
-			sequence = [1] + list(p) + [N]
-			res = [0]
-			# ... work out all "interpretations" of the pairs in this pattern e.g. 1 | 2 5 4 | 7 see in the NOTES how this should be parsed
-			for fst, snd in zip(sequence, sequence[1:]):
+			pattern = [1] + list(p) + [N] # this is now something like:  1 | 2 5 4 | 9
+			res = [0] # res will contain all the partial lengths
+			# ... work out all "interpretations" of the pairs in this pattern e.g. 1 | 2 5 4 | 9 see in the NOTES how this should be parsed
+			for fst, snd in zip(pattern, pattern[1:]):
 				tmp = []
 				# 1) you can **always** interpret any pair as doing an "across move"
 				tmp.extend((((d * abs(fst - snd))**2 + s**2)**0.5 + t + x) for x in res ) # x in res are all the partial lengths, up to this position 
@@ -176,7 +187,7 @@ for intermediate_positions in range(0, N-2 + 1):
 				res = tmp # update res - now is the lengths of all partial lengths up until this position with this latest position (i.e. snd) included
 			COMB_PRECOMPUTE.extend(res)
 
-PRECOMPUTE = sorted(2*x + 2*t + s for x in COMB_PRECOMPUTE) # add the ---- length, s, and the 2*t eyelets at position 1
+PRECOMPUTE = sorted(2*x + s + 2*t for x in COMB_PRECOMPUTE) # add the ---- length, s, and the 2*t eyelets at position 1
 # -- END PRECOMPUTE --
 
 
