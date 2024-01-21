@@ -62,6 +62,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Accounting a.k.a. Bokforing - kattis: bokforing](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/bokforing.md)
 - [Jumping Yoshi - kattis: jumpingyoshi](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/jumpingyoshi.md)
 - [Ada Loveslaces - kattis: adaloveslaces](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/adaloveslaces.md)
+- [Digit Division - kattis: digitdivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/digitdivision.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -72,7 +73,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - ETA
 - Dams in Distress
 - Left and Right
-- Digit Division
 - Canvas Line
 - Delft Distance
 - The Paladin
