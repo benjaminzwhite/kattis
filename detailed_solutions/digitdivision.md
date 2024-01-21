@@ -14,10 +14,13 @@ Think about where you can insert a separator, `|`, in the digit string:
 
 e.g. with the first testcase, with number `1246` and divisor `2`, we start with `|1246` and on each step we are looking at the number formed to the left of the current separator position:
 
-`1|246` - 1 not divisible by 2
-`12|46` - 12, divisible by 2, OK can place separator here
-`124|6` - 124, divisible by 2, OK can place separator here
-`1246|` - 1246, divisible by 2, OK can place separator here
+- `1|246` - 1 not divisible by 2
+
+- `12|46` - 12, divisible by 2, OK can place separator here
+
+- `124|6` - 124, divisible by 2, OK can place separator here
+
+- `1246|` - 1246, divisible by 2, OK can place separator here
 
 If you now consider the general end result, with multiple separators, `|`, in a given digit string you note that for any large prefix, i.e. sequence terminated by a separator, you can consider what happens when you remove any separator within that prefix: **You will find that all subsequences formed will be divisible by `d` !**
 
