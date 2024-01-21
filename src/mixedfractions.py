@@ -1,5 +1,5 @@
-# Primality
-# https://open.kattis.com/problems/primality
+# Mixed Fractions
+# https://open.kattis.com/problems/mixedfractions
 # TAGS: mathematics
 # CP4: 5.2i, Fractions
 # NOTES:
