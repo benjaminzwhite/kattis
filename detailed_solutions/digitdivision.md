@@ -24,7 +24,7 @@ e.g. with the first testcase, with number `1246` and divisor `2`, we start with 
 
 If you now consider the general end result, with multiple separators, `|`, in a given digit string you note that for any large prefix, i.e. sequence terminated by a separator, you can consider what happens when you remove any separator within that prefix: **You will find that all subsequences formed will be divisible by `d` !**
 
-For example, suppose we have as large prefix `12|4|98|36|` and we have `d=2`. Consider breaking this prefix into `124|` and `98|36|`: since `124` is `k * d` for some `k`, and  `1249836` is `l * d` for some `l`, then `9836 = (l * d) - (k * d * 10**some_exponent)` is also `something * d` so it is divisible by `d`.
+For example, suppose we have as large prefix `12|4|98|36|` and that we have `d=2`. Consider breaking this prefix into `124|` and `9836|`: since `124` is `k * d` for some `k`, and  `1249836` is `l * d` for some `l`, then `9836 = (l * d) - (k * d * 10**some_exponent)` can also be written in the form `something * d` so, in other words, it is also divisible by `d`.
 
 So the answer is that "you can toggle on/off any of the separators `|` and form a valid subsequence" therefore the answer is `2 ** number of toggle-able separators`.
 
@@ -34,13 +34,13 @@ So the answer is that "you can toggle on/off any of the separators `|` and form 
 
 In the above examples, you need to **NOT** count the final `|` since the latter is not actually "toggle-able".
 
-e.g. with `749` and `d=7` then you have `7|49`, not actually `7|49|` as toggles, otherwise you are double counting `7 49|` and `7 49`.
+e.g. with `749` and `d=7` then you have `7|49`, not actually `7|49|` as the list of toggle-able separators, otherwise you are double counting `7 49|` and `7 49` when they in fact correspond to the exact same configuration.
 
 e.g. with `12|4|6|` the only toggleable ones are actually `12|4|6`  otherwise you double count `12|46|` and `12|46`.
 
-In other words the answer is `2 ** (cnt of separators - 1)` since `cnt of separators - 1` is the actual number of toggleable separators.
+In other words, with the way I have defined the separators above, the answer is `2 ** (cnt of separators - 1)` since `cnt of separators - 1` is the actual number of toggleable separators.
 
-**Important:** you also need to ensure that the entire input number itself is divisible by the `d`. Otherwise this approach fails on inputs like e.g. `s = 888881` with `d=2`, because even though I count 5 valid prefixes, the end/rightmost is not divisible by `d=2`.
+**Important:** you also need to ensure that the entire input number itself is divisible by the `d`. Otherwise this approach fails on inputs like e.g. `s = 888881` with `d=2`, because even though I count 5 valid prefixes, `8|8|8|8|8|1`, the end/rightmost `1` is not divisible by `d=2`.
 
 So you need an extra check: you want `s` itself to be divisible by `d`. Clever implementation: converting huge `s` to int is not clever; so you can just check if the final `prefix % d` that you calculated already is itself divisible by `d` (see code below).
 
@@ -63,6 +63,7 @@ for c in map(int, s):
 
 # These are the extra checks described in the Implementation notes above
 # Without these, you will get WA on some testcases - consider for example something like s=888881 with d=2
+# -> without this check, my above answer would produce res = 16, when in fact res should be 0.
 if prefix % d == 0 and cnt > 0:
     res = pow(2, cnt-1, BIGMOD)
 else:

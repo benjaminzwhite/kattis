@@ -7,7 +7,7 @@
 - each vertical line creates H+1 regions
 - each horizontal line creates V+1 regions
 - so V as close to H as possible creates max (V+1)(H+1)
-(e.g. maximize expression of the form (N // 2) * (N - N//2))
+(i.e. maximize expression of the form (N // 2) * (N - N//2))
 """
 N = int(input())
 

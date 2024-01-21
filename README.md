@@ -6,7 +6,7 @@ I also write [detailed solution pages for particularly interesting exercises](#e
 
 Many of the non-trivial exercises have a `NOTES` comment in source file with thought process/reasoning/observations.
 
-PM me with any comments or questions.
+Email me with any comments or questions.
 
 ## General notation
 
