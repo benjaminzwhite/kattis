@@ -58,10 +58,10 @@ So finally:
 
 1. If you precompute the "fundamental sequences" above i.e. accumulate `2,3,4,...` until `N_MAX = 1_000_000`
 2. Then, for each query `N`: 
-   - If `N` can be expressed as a `k=2` term sequence, by the above argument, it must be able to be written as `N = FUNDAMENTAL(2) + m*2` for some `m`
-   - If `N` can be expressed as a `k=3` term sequence, it is of the form `N = FUNDAMENTAL(3) + l*3` for some `l`
+   - If `N` can be expressed as a `k=2` term sequence, by the above argument, it must be able to be written as `N = FUNDAMENTAL(2) + x*2` for some `x`
+   - If `N` can be expressed as a `k=3` term sequence, it is of the form `N = FUNDAMENTAL(3) + y*3` for some `y`
    - etc. etc.
-3. And now with this precomputation done, we just need to compute `N - FUNDAMENTAL(k) % k` and check if this `== 0` !
+3. And so now with this precomputation done, we just need to compute `( N - FUNDAMENTAL(k) ) % k` and check if this `== 0` !
 
 ### Implementation notes
 
