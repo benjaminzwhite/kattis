@@ -1,7 +1,7 @@
 # Prva
 # https://open.kattis.com/problems/prva
 # TAGS: grid
-# CP4: 	2.2d, 2D Array, Harder
+# CP4: 2.2d, 2D Array, Harder
 # NOTES:
 """
 - Unoptimized; don't need to keep whole words[] list, can just find minimum as you loop through rows and cols
