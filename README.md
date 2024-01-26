@@ -64,6 +64,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Ada Loveslaces - kattis: adaloveslaces](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/adaloveslaces.md)
 - [Digit Division - kattis: digitdivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/digitdivision.md)
 - [Integer Estate Agent - kattis: estate](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/estate.md)
+- [The Paladin - kattis: thepaladin](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/thepaladin.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -76,7 +77,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Left and Right
 - Canvas Line
 - Delft Distance
-- The Paladin
 - LCM Pair Sum
   
 </details>
