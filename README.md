@@ -65,12 +65,12 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Digit Division - kattis: digitdivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/digitdivision.md)
 - [Integer Estate Agent - kattis: estate](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/estate.md)
 - [The Paladin - kattis: thepaladin](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/thepaladin.md)
+- [Srednji - kattis: srednji](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/srednji.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
-- Srednji
 - Wolf
 - ETA
 - Dams in Distress
