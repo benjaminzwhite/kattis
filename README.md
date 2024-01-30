@@ -66,6 +66,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Integer Estate Agent - kattis: estate](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/estate.md)
 - [The Paladin - kattis: thepaladin](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/thepaladin.md)
 - [Srednji - kattis: srednji](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/srednji.md)
+- [Left and Right - kattis: leftandright](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/leftandright.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -74,7 +75,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Wolf
 - ETA
 - Dams in Distress
-- Left and Right
 - Canvas Line
 - Delft Distance
 - LCM Pair Sum
