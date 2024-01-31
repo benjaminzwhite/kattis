@@ -12,18 +12,18 @@ logic
 
 Every time you see an `R` you want a number that is guaranteed to be to the "left of" i.e. **smaller than next one**, so if you always print the lowest "unused number" (see below for explanation of this) you will satisfy this requirement **and this will satisfy the overall requirement of string being the lexicographically smallest** (because you will always have the smallest valid candidate earlier than any other possible candidates).
 
-Every time you see an `L` you want to want a number that is guaranteed to be to the "right of" i.e. **larger than next one**. Now, however, if you always print the **largest** "unused number", you will get a valid answer **but you are not guaranteed to get the lexicographically earliest overall result.**
+Every time you see an `L` you want a number that is guaranteed to be to the "right of" i.e. **larger than next one**. Now, however, if you always print the **largest** "unused number", you will get a valid answer **but you are not guaranteed to get the lexicographically earliest overall result.**
 
 ```
-  R L L R L
+R L L R L
 1 6 5 3 4 2
 ```
 
 For example, with the above illustrated testcase you are "using up 6" too soon, since the current descent of which 6 is the first element only has 3 elements (here 6,5,3) and could have been achieved instead with `4,3,2` where `4,3,2 < 6,5,3` lexicographically.
 
-So you need to "lookahead" with the `L` chars, and determine what the length of the "descent substring" is (in the above example, the first descent substring just after `1` : `1 _ _ _ ....` is identified by the sequence `RLL` and will be of length 3 and needs to go in the `_ _ _`)
+So you need to "lookahead" with the `L` chars, until you encounter another `R`, and determine what the length of this "descent substring" is (in the above example, the first descent substring just after `1` : `1 _ _ _ ....` is identified by the sequence `LLR` and will be of length 3 and needs to go in the `_ _ _`)
 
-Once you know it, then you find the lexicographically smallest available by taking the X (`X=3` in the example above) smallest available numbers and then append them **IN REVERSED ORDER** to get the lexicographically smallest available valid candidate that fits.
+Once you know this length, X, then you find the X (`X = 3` in the example above) smallest available numbers and then append them **IN REVERSED ORDER** to get the lexicographically smallest available valid candidate that fits.
 
 ### Implementation notes
 
