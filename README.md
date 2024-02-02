@@ -67,6 +67,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [The Paladin - kattis: thepaladin](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/thepaladin.md)
 - [Srednji - kattis: srednji](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/srednji.md)
 - [Left and Right - kattis: leftandright](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/leftandright.md)
+- [Dams in Distress - kattis: damsindistress](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/damsindistress.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -74,7 +75,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Ocean Monument
 - Wolf
 - ETA
-- Dams in Distress
 - Canvas Line
 - Delft Distance
 - LCM Pair Sum
