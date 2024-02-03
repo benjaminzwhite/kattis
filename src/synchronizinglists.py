@@ -15,7 +15,7 @@ while True:
     xs = []
     for i in range(n):
         x = int(input())
-        xs.append((x, i))
+        xs.append((x, i)) # CARE! Tuple is (x, i) so that you sort on x values!!
     
     ys = []
     for _ in range(n):
