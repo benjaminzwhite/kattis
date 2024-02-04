@@ -1,5 +1,5 @@
-# Planting Trees
-# https://open.kattis.com/problems/plantingtrees
+# Basketball One-on-One
+# https://open.kattis.com/problems/basketballoneonone
 # TAGS: basic, logic
 # CP4: 1.4e, Control Flow
 # NOTES:
