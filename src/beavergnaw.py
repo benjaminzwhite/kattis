@@ -1,5 +1,5 @@
-# Unlock Pattern
-# https://open.kattis.com/problems/unlockpattern
+# Beavergnaw
+# https://open.kattis.com/problems/beavergnaw
 # TAGS: mathematics, geometry
 # CP4: 7.4a, 3D Geometry
 # NOTES:
