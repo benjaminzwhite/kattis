@@ -7,9 +7,9 @@
 Nice little exercise:
 
 Work BACKWARDS from each "customer desired time" - this imposes 3 needed actions:
-- one at time t
-- one at time t-d
-- one at time t-2*d (present to customer, flip, place on grill initially respectively)
+- one at time t (action: present to customer)
+- one at time t-d (action: flip burger)
+- one at time t-2*d (action: place on grill initially)
 
 So count how many actions are needed for each time t.
 Since each chef can perform 2 actions per unit time, then the number of chefs needed is the ceil of max(time)/2
