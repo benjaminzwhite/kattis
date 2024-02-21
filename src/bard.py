@@ -1,7 +1,7 @@
 # Bard
 # https://open.kattis.com/problems/bard
-# TAGS: array, nice
-# CP4: 1.4j, Medium
+# TAGS: dict
+# CP4: 2.3d, Hash Table (set)
 # NOTES:
 """
 Just updating/simulating the process, don't know if there is a smarter way.
