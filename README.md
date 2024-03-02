@@ -69,6 +69,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Left and Right - kattis: leftandright](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/leftandright.md)
 - [Dams in Distress - kattis: damsindistress](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/damsindistress.md)
 - [Sums - kattis: consecutivesums](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/consecutivesums.md)
+- [Divisible Subsequences - kattis: divisible](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/divisible.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
