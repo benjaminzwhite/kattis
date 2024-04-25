@@ -70,6 +70,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Dams in Distress - kattis: damsindistress](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/damsindistress.md)
 - [Sums - kattis: consecutivesums](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/consecutivesums.md)
 - [Divisible Subsequences - kattis: divisible](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/divisible.md)
+- [Joyless Game - kattis: joylessgame](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/joylessgame.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
@@ -80,6 +81,5 @@ Exercises which I found particularly interesting for some reason, and decided to
 - Canvas Line
 - Delft Distance
 - LCM Pair Sum
-- Joyless Game
   
 </details>
