@@ -1,6 +1,6 @@
 # Znanstvenik
 # https://open.kattis.com/problems/znanstvenik
-# TAGS: greedy, nice
+# TAGS: string, sorting
 # CP4: 8.7c, Fast DS+Other, Easier
 # NOTES:
 """
