@@ -1,5 +1,5 @@
-# Shortest Composite Sum
-# https://open.kattis.com/problems/shortestcompositesum
+# Necklace Decomposition
+# https://open.kattis.com/problems/necklacedecomposition
 # TAGS: greedy, string, nice
 # CP4: 0, Not In List Yet
 # NOTES:
