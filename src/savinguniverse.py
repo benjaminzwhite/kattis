@@ -1,6 +1,6 @@
 # Saving the Universe
 # https://open.kattis.com/problems/savinguniverse
-# TAGS: interpreter
+# TAGS: queue, logic
 # CP4: 4.6a, S/Longest Paths on DAG
 # NOTES:
 """
