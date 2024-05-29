@@ -72,6 +72,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Divisible Subsequences - kattis: divisible](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/divisible.md)
 - [Joyless Game - kattis: joylessgame](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/joylessgame.md)
 - [Powers and Modulus - kattis: powers](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/powers.md)
+- [Clock Construction - Kattis: clockconstruction](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/clockconstruction.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
