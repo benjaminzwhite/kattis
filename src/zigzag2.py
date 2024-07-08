@@ -1,4 +1,4 @@
-# Zigzag (note this is Zigzag 2 there must be another one on Kattis called zigzag O_o)
+# Zigzag
 # https://open.kattis.com/problems/zigzag2
 # TAGS: greedy, proof
 # CP4: 0, Not In List Yet
