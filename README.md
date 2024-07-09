@@ -77,6 +77,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Eko - Kattis: eko](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/eko.md)
 - [The Sound of Silence - Kattis: sound](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/sound.md)
 - [Escape from Enemy Territory - Kattis: enemyterritory](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/enemyterritory.md)
+- [Happy and Unhappy Numbers - Kattis: happyandunhappynumbers](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/happyandunhappynumbers.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
