@@ -12,20 +12,20 @@ mathematics, combinatorics, dict
 
 ### Clarification of exercise statement
 
-After not understanding the testcases and some time on the reading comprehension: it seems that the order is "fixed" - basically,  you are **not** allowed to freely flip words up/down etc. You must place the given words either left to right in the 2 rows, or top to bottom in the 2 columns, **as they are given**. This wasn't 100% clear to me from reading the statement (noe that this constraint reduces the combinatorics possibilities therefore).
+After not understanding the testcases and some time on the reading comprehension: it seems that the order is "fixed" - basically,  you are **not** allowed to freely flip words up/down etc. You must place the given words either left to right in the 2 rows, or top to bottom in the 2 columns, **as they are given**. This wasn't 100% clear to me from reading the statement (note that this constraint reduces the combinatorics possibilities therefore).
 
 ### Main solution
 
 Combinatorics: for all possible assignments of letters to the 4 corners: 
 
 1. Fill the first "row or column" (whichever one of the 2 rows or 2 columns you want) in `d[start + end_letter]` ways i.e. using one of the words that starts and ends with the given row/columsn end points (**NOTE THIS MAY BE ZERO** in which case this configuration/assignment of letters to the 4 corners has 0 solutions)
-2. Then fill second "row or column", third "row or column", fourth "row or column" same logic - in each case you have `d[this_row_or_column_start + end_letters]` ways of doing this
+2. Then fill second "row or column", third "row or column", fourth "row or column" each time with the same logic as above: in each case you have `d[this_row_or_column_start + end_letters]` ways of doing this
 
 So final result is `product of all "num_ways for each row_or_column" for all 4 columns`
 
 **However: note that you cannot reuse words** so you have to track, for each configuration, how many repetitions occur:
 
-e.g. words `d = { AB:3, CV:1, BV:23153, ZZ:3 ..}`
+e.g. words `d = { AB:3, CV:1, BV:23153, ZZ:3 ..}` where here for example the element `AB` is counting how many words start with `A` and end with `B`
 
 and let's say current square assignment we are counting for is:
 
