@@ -79,6 +79,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Escape from Enemy Territory - Kattis: enemyterritory](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/enemyterritory.md)
 - [Happy and Unhappy Numbers - Kattis: happyandunhappynumbers](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/happyandunhappynumbers.md)
 - [Alehouse - Kattis: alehouse](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/alehouse.md)
+- [Razbibriga - Kattis: razbibriga](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/razbibriga.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
