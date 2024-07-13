@@ -46,7 +46,7 @@ n, k = map(int, input().split())
 
 xs = []
 for _ in range(n):
-    l,r = map(int, input().split())
+    l, r = map(int, input().split())
     # NOTE: use op = 1, -1 to determine whether we will increase or decrease the "open/close interval counter"
     xs.append((l, 1)) 
     xs.append((r + k, -1)) # prolong each person's real interval by k to create an effective interval ending at r+k instead
