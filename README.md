@@ -80,6 +80,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Happy and Unhappy Numbers - Kattis: happyandunhappynumbers](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/happyandunhappynumbers.md)
 - [Alehouse - Kattis: alehouse](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/alehouse.md)
 - [Razbibriga - Kattis: razbibriga](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/razbibriga.md)
+- [Common Factors - Kattis: commonfactors](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/commonfactors.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
