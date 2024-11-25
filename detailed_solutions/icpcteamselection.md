@@ -22,7 +22,7 @@ However, if you try to "dilute the small values" into groups with larger medians
 - `99, 10, 4`  median is `10`
 - `10, 10, 4`  median is `10`
 
-Note how you the value `4` never occurs as a median now.
+Here you obtain a total sum of `10 + 10 + 99 = 119 > 113`. Note how you the value `4` never occurs as a median now.
 
 In general, the algorithm we are using here it to "pop largest value, twice" then "pop smallest value, once", to get each group of size 3.
 
