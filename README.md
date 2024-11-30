@@ -82,6 +82,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Razbibriga - Kattis: razbibriga](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/razbibriga.md)
 - [Common Factors - Kattis: commonfactors](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/commonfactors.md)
 - [ICPC Team Selection - Kattis: icpcteamselection](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/icpcteamselection.md)
+- [Boiling Vegetables - Kattis: vegetables](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/vegetables.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
