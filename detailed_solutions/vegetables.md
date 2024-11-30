@@ -17,7 +17,7 @@ Basically here's how to think about it:
 - All vegetables with original weights are initially in one piece
 - Your goal is to "reduce the difference between the maximum weight piece and the min weight piece" (think about it - that's a restatement of the problem; asking for "increasing the ratio of min_weight/max_weight above `>= T`")
 - Now; **you can never INCREASE the `min_weight_piece` directly** since you can only cut pieces, but not join them
-- So you can only improve the ratio by **decreasing the `max_weight_piece`
+- So you can only improve the ratio by **decreasing the `max_weight_piece`**
 - Now, the `max_weight_piece` results from a) An initial vegetable of weight `W`, b) the `current_number_of_pieces` that vegetable `W` has been divided into
 - So basically, each step you want to find whichever vegetable is *currently* contributing the largest weight pieces; let's say it is vegetable `V` and has been cut into `6` pieces. You "undo" this division into `6` pieces and cut it into `6 + 1 = 7` pieces instead.
 
@@ -81,14 +81,14 @@ Following logic from above 1st solution: at each step, we find the vegetable tha
 
 This value will be found with our `maxheap`; we pop that value, now we pretend that we take **that original vegetable and instead of e.g. `3` pieices it now has `3+1 = 4` pieces.**
 
-`maxheap = [ (-20, 60, 3), .... ]` (CARE! not we have here `-20` due to python `maxheap` behavior, need to take negative value)
+`maxheap = [ (-20, 60, 3), .... ]` (CARE! note we have here `-20` due to Python `maxheap` behavior, need to take negative value)
 
-We pop this, the knowledge `60, 3` means that we know `-20` is from cutting piece `60` into `3` pieces so:
+We pop this tuple, and the knowledge of the values `60, 3` means that we know `-20` is from cutting piece `60` into `3` pieces so:
 
 - we now cut `60` into `3+1 = 4` pieces, so we heappush: `(-15, 60, 4)` back to the `maxheap`
 - we also heappush `15` to the **minheap** in case we have affected the minimum value also
 
-**We perform this as long as the `[0]` value of the `minheap` and the `[0]` value of the `maxheap` are lower than the target ratio.**
+**We perform this as long as the top value on the `minheap` and the top value on the `maxheap` are lower than the target ratio.**
 
 ## AC code
 
