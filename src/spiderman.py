@@ -4,6 +4,14 @@
 # CP4: 3.5f, DP level 1
 # NOTES:
 """
+I wrote a detailed solution:
+
+https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/spiderman.md
+
+(same content/comments as here)
+
+---
+
 I had a subtle bug for a while: it was in the lookbehind step - I was ALWAYS updating the dp cell as follows:
 
 dp[row_index][curr_height] = (curr_distance, min(max_height, tmp_height)) 
