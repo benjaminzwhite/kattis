@@ -62,7 +62,7 @@ However we still need to consider the `N == 26` case, as there is an extra condi
 
 If you have the **same number of cards, i.e. `N == 26` each**, in principle you can win (using the same logic as for the strict more-cards-than-opponent case), however you **STILL NEED TO BE ABLE TO "WIN" THE LAST SUIT-MATCH-PAIR FIGHT AT THE VERY END** i.e. you need to actually have one suit where you have a better card than your opponent: this will be the pair you place last in the rearranged decks
 
-But be carefuly - not only do you need to have a card greater than the opponents of the same suit, you need to make sure that **OPPONENT ACTUALLY HAS AT LEAST ONE CARD OF THAT SUIT**. If you are not careful, you might return True if you have ALL the cards `1 -> 13` HEARTS for example, when in fact since opponent has NO hearts, you **CANNOT ACTUALLY BEAT THEM ON HEARTS PAIR**
+But be careful - not only do you need to have a card greater than the opponents of the same suit, you need to make sure that **OPPONENT ACTUALLY HAS AT LEAST ONE CARD OF THAT SUIT**. If you are not careful, you might return True if you have ALL the cards `1 -> 13` HEARTS for example, when in fact since opponent has NO hearts, you **CANNOT ACTUALLY BEAT THEM ON HEARTS PAIR**
 
 (see Implementation Notes below on how I check all of this).
 
