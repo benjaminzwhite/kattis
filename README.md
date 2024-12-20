@@ -85,6 +85,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Boiling Vegetables - Kattis: vegetables](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/vegetables.md)
 - [Spiderman - Kattis: spiderman](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/spiderman.md)
 - [Wolf - Kattis: wolf](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/wolf.md)
+- [Tram - Kattis: tram](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/tram.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
