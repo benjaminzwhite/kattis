@@ -33,7 +33,7 @@ N+1, N+2... below:
 ```
 
 Observations: Here we have that `target_k` is `< b=3` bits in the original `N=50`.
-- The only wat we can get the bit count in `N` to decrease relative to `n` is wen we can finally toggle the least significant set `1`
+- The only way we can get the bit count in `N` to decrease relative to `n` is wen we can finally toggle the least significant set `1`
 - You can see this above, as bitcount falls from `51` to `52` as we go from `110011` to `110100` and from `110111` to `111000`
 
 (note that these 2 examples are not representative: in general you can have trailing **unset** `0`s also: `100011000 -> 100100000` is the first way to decrement bitcount, and here we have trailing `0`'s in initial `N`)
