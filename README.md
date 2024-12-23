@@ -87,13 +87,13 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Wolf - Kattis: wolf](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/wolf.md)
 - [Tram - Kattis: tram](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/tram.md)
 - [Envious Exponents - Kattis: enviousexponents](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/enviousexponents.md)
+- [Canvas Line - Kattis: canvasline](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/canvasline.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
 - ETA
-- Canvas Line
 - Delft Distance
 - LCM Pair Sum
   
