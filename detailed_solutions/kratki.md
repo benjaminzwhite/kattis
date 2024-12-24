@@ -12,9 +12,9 @@ mathematics, combinatorics, proof
 
 ### Proof background
 
-By the [Erdos-Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem) on a sequence `N` distinct integers: if `N = m*n + 1` then the sequence must contain a monotonic increasing (resp. decreasing) subsequence of length `m+1` or a monotonic decreasing (resp. increasing) subsequence of length `n+1`.
+By the [Erdős-Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem) on a sequence of `N` distinct integers: if `N = m*n + 1` then the sequence must contain a monotonic increasing (resp. decreasing) subsequence of length `m+1` or a monotonic decreasing (resp. increasing) subsequence of length `n+1`.
 
-If we want `K` to be the length of the largest monotonic subsequence then, you want the `max(m,n)` to be as small as possible, which requres `m`, `n` to be as close as possible i.e `m = n ~ sqrt(N)`
+If we want `K` to be the length of the largest monotonic subsequence, then we want the `max(m,n)` to be as small as possible, which requres `m`, `n` to be as close as possible i.e `m = n ~ sqrt(N)`
 
 In any case, we need `K >= sqrt(N)` otherwise there will definitely be a monotonic subsequence of length greater than `K`, contradicting maximality of `K` requirement
 
@@ -60,7 +60,7 @@ Flatten: `9 10 11 12 13 14 / 3 4 5 6 7 8 / 1 2` - longest chunk length is `6`, n
 
 ### Implementation note and performance
 
-While implementing the above approach, I noted that `N` is `10**6` so it's actually a performance exercise (in Python at least) if you do flatten and range stuff as described above (building multiple lists etc.), so just copying the implementation above will get TLE.
+While implementing the above approach, I noted that `N` is `10**6` so it's actually a performance exercise (in Python at least): if you actually flatten and build using the range stuff as described above (building multiple lists etc.), just copying the implementation above will get TLE.
 
 I reworked the **implementation** (same logic, but now just find some easy-to-print arrangement of the "square" row/column breakdown)
 
