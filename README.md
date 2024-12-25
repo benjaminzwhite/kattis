@@ -89,6 +89,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Envious Exponents - Kattis: enviousexponents](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/enviousexponents.md)
 - [Canvas Line - Kattis: canvasline](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/canvasline.md)
 - [Kratki - Kattis: kratki](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/kratki.md)
+- [Logland - Kattis: logland](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/logland.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
