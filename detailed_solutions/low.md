@@ -51,7 +51,7 @@ So each time you fail to find an adjacent valid greedy pair, what is happening t
 
 - This is the key observation!: **There is a limited number of such "space" to accept these leftover batteries**.
 
-e.g. `[2,5,10,30,41,42,....]`` with trying `d = 4`: and let's say we are in the `k=3` batteries per chip configuration
+e.g. `[2,5,10,30,41,42,....]` with trying `d = 4`: and let's say we are in the `k=3` batteries per chip configuration
 
 ```
 1. find pair 2,5 OK : assign to first machine as MACHINE1: chip1:[2 _ _ ], chip2:[5 _ _ ]
@@ -82,14 +82,14 @@ So this is what determines "how far we can move ahead in sorted battery list" lo
 
 In code below, the `spare_capacity` is the variable described in the walkthrough example.
 
-After submission, noticed that the `assigned_machines += 1` and check for `assigned_machines == machines` at the end is **not needed to get AC**
+After submission, I noticed that updating the `assigned_machines += 1` and checking for `assigned_machines == machines` at the end is **not needed to get AC**
 
 So basically it seems if you can always keep `spare capacity > 0` throughout array of `xs`, then it's logically equivalent to having the required number of machines (not 100% sure I can prove this off the top of my head, but it's AC with code commented out - I left it for reference)
 
 ## AC code
 
 ```python
-machines, batteries_per_chip = map(int, next(it).split()) # n, k in text: was getting confused by variable names so changed
+machines, batteries_per_chip = map(int, input().split()) # n, k in text: was getting confused by variable names so changed
 
 xs = sorted(map(int, input().split()))
 
