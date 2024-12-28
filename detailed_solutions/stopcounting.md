@@ -2,7 +2,7 @@
 
 [Problem statement on Kattis](https://open.kattis.com/problems/stopcounting)
 
-An interesting array-processing problem, like the classic range sum/"find media" exercises, but that I haven't seen before.
+An interesting array-processing problem, like the classic range sum/Two Sum/"find median" type exercises, but that I haven't seen before.
 
 It's ranked quite highly, but there is a quite simple solution after reasoning a bit - maybe people are trying to find a dynamic programming or more complex approach?
 
