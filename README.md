@@ -92,6 +92,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Logland - Kattis: logland](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/logland.md)
 - [Low Power - Kattis: low](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/low.md)
 - [Stop Counting! - Kattis: stopcounting](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/stopcounting.md)
+- [Chemist's Vows - Kattis: chemistsvows](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/chemistsvows.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
