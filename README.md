@@ -97,6 +97,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Combination Lock - Kattis: combinationlock](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/combinationlock.md)
 - [Financial Planning - Kattis: financialplanning](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/financialplanning.md)
 - [Svada - Kattis: svada](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/svada.md)
+- [Orderly Class - Kattis: orderlyclass](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/orderlyclass.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
