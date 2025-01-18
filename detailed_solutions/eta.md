@@ -12,7 +12,7 @@ mathematics, graph
 
 Instead of thinking about "max degrees/distances etc." the better start point is **a star graph**.
 
-Tthe key observation is: if you want to have a vertex at a distance of `d=7` **you must have at least one vertex at** `d=6,5,...` etc.
+The key observation is: if you want to have a vertex at a distance of `d=7` **you must have at least one vertex at** `d=6,5,...` etc.
 
 So consider a **histogram of the distances** bins (forget `a,b` for now, just suppose you have a graph with `v` vertices) - an **original star graph configuration will look like this**:
 
