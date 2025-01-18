@@ -98,12 +98,12 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Financial Planning - Kattis: financialplanning](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/financialplanning.md)
 - [Svada - Kattis: svada](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/svada.md)
 - [Orderly Class - Kattis: orderlyclass](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/orderlyclass.md)
+- [ETA - Kattis: eta](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/eta.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
-- ETA
 - Delft Distance
 - LCM Pair Sum
   
