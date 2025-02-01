@@ -1,49 +1,13 @@
-# Detailed solution for Kattis - Delft Distance
+# Delft Distance
+# https://open.kattis.com/problems/delftdistance
+# TAGS: dynamic programming, nice
+# CP4: 4.6a, S/Longest Paths on DAG
+# NOTES:
+"""
+I wrote a detailed solution:
 
-[Problem statement on Kattis](https://open.kattis.com/problems/delftdistance)
-
-This is a really nice exercise - the logic is fairly standard dynamic programming, but finding a clever implementation to deal with the grid layout is a very interesting challenge.
-
-## Tags
-
-dynamic programming
-
-## Solution
-
-The logic/paper answer: it's Manhattan distance at first - without any `O` the answer would be independent of path, you just take `R+C` steps total.
-
-But, similar to classic dp exercise where you have "holes" in a `R*C` grid and need to calculate paths that avoid the holes, here the optimal
-answer is clearly to take that path that touches as many `O` as possible, including moving between `OO` and `OO_vertical` etc., as this always
-reduces total distance. So the solution is an "inverse" to the above classic dp exercise - we want to calculate **the path that touches as many circles as possible**.
-
-Now for the implementation tricky stuff - the grid is no longer a nice regular lattice, and at first I was trying to have mixed-length rows and keep
-track of various offsets but it's a nightmare (like "if row 3 has 8 circles, then look-behind is some function f(3,8)" etc.)
-
-So while thinking about how to work with "not nice grids", I thought at first of those hexagonal problems where you have to convert easy BFS to
-non traditional coordinates, but then I was reminded of an even better relevant example from previous solved exercises:
-
-[Diagonal Cut - https://open.kattis.com/problems/diagonalcut](https://open.kattis.com/problems/diagonalcut)
-
-which I've solved in a few different ways: same kind of logic, or "problemsolving intuition" which is in general that "you should work with what is easy
-for you, not necessarily the input as it is given" (same kind of intuition as transforming coordinate system, rotating visualization, introducing dummy points in graphs etc.)
-
-So, returning to this exercise - **the nice idea is to use a 2x2 "mesh" instead of the board as given**:
-
-I divide the grid by 2x2 to get points that are easier to work with for (can't draw in ASCII, too complex, just use pen and paper or read the comments in code below also).
-
-In addition to the "regular" 4 vertices of each gridsquare, **add the 4 half-length ones, and the centre of each square**. These centre points are the nice
-addition, as - **if you initialize them to `inf` in the dp** - they a) allow you to have same-size rows and cols but b) never interfere with "real" calculations as they will always contribute `inf` to any min() dp calculation so will never be "valid options" for the path dp calculation.
-
-### Implementation/important detail:
-
-The other really nice thing I discovered during implementation is that, no matter where you are "geometrically" when considering the dp options for the circle case (i.e. you are calculating dp cost to reach any point or "half-point" on the mesh), what you find is that **the 3 dp options are always at the same relative position - left/above/aboveleft, and in all configurations the "unphysical" cases are handled**. I made separate notes for this as I was surprised that it works out cleanly, see notes in code below.
-
-The other tricky thing is to map back, from a given mesh location, to finding the geometry of where you really are in the board of `O` and `X`: if you let `r,c` be coordinates in the **mesh grid**, then the coords in the input `board[]` are given by `(r-1)//2` and `(c-1)//2` - you need the `-1` because the top row (`r=0`) and col (`c=0`) of the mesh **are not below/to the right of anything** (again, draw a `R*C` grid with both coordinate systems if you need to clarify this, easy to visualize on paper)
-
-
-## AC code
-
-```python
+https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/delftdistance.md
+"""
 from math import pi
 
 R, C = map(int, input().split())
@@ -106,4 +70,3 @@ for r in range(1, MESH_R):
 res = dp[-1][-1]
 
 print(res)
-```
