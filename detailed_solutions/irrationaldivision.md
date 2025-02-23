@@ -36,32 +36,32 @@ Then you are in **C** since you must score a board that has 1 even dimension (to
 
 #### Case 2, subcase: `q` is odd
 
-You can always score 1 on your turn by taking an odd number of "columns" e.g. if p,q = 3,4 then you would take 3x1 or 3x3 etc.
+You can always score 1 on your turn by taking an odd number of "columns" e.g. if `p = 3` and `q = 4` then you would take `3x1` or `3x3` etc.
 
-By taking an odd number of columns, the opponent is basically given a "start position with a board with black <=> white positions flipped" (to see this, cut off your column and flip the board 90 degrees clockwise -> the topleft corner is now WHITE so the excess that existed in favor of black is now in favor of white).
+By taking an odd number of columns, the opponent is basically given a "start position with a board with black <=> white positions flipped" (to see this, cut off your column and flip the board 90 degrees clockwise -> the topleft corner is now **white** so the excess that existed in favor of black is now in favor of white).
 
-So, **if you gave your opponent an even amount** for **their** `p'` dimension, (their `p'` is `old_q - how many columns you took`;just draw it, it's hard to show in ASCII) then the best they can do is 0 score
+So, **if you gave your opponent an even amount** for **their** `p'` dimension, (their `p'` is `old_q - how many columns you took`; just draw it, it's hard to show in ASCII) then the best they can do is 0 score.
 
-This case will occur (giving opponent even `p'` dimenion) if `q` **was odd** since you took an **odd** number of your `p` columns)
+This case will occur (giving opponent even `p'` dimenion) if `q` **was odd** since you took an **odd** number of your `p` columns).
 
 - So summary of this configuration: `p` is odd, `q` is odd -> you gain +1, handover e.g. `p * (q - ODD)` board, rotated 90 degrees -> opponent has a `(q - ODD) * p` board with white as their topleft, so they can only score 0
 - Therefore `p odd, q odd` -> **score = +1**
 
 #### Case 2, subcase: `q` is even
 
-On the other hand, **if you gave your opponent an odd amount** for **their** `p'` dimension (i.e original `p` odd, original `q` **even**, you take odd number of columns to get +1 score and handover `p * (q - ODD)`, rotate 90 degrees -> opponent has `(q - ODD) * p` board with white as topleft square)
+On the other hand, **if you gave your opponent an odd amount** for **their** `p'` dimension (i.e original `p` odd, original `q` **even**, you take odd number of columns to get +1 score and handover `p * (q - ODD)`, rotate 90 degrees -> opponent has `(q - ODD) * p` board with white as topleft square).
 
 In this situation, if `q` was even, then opponent has therefore `p' * q'` with `p' = q - ODD` and `q' = p`, so **their** `p'` and `q'`  are both **odd**.
 
-Since they now have an "odd x odd" board where the top-left is white, there is an excess of +1 **white** ie. if they take this entire board they score -1
+Since they now have an "odd x odd" board where the top-left is white, there is an excess of +1 **white** ie. if they take this entire board they score -1.
 
-So if they can't handover this -1 score to you, your total score will be `1 - (-1) = 2` difference since you have +1 they have -1
+So if they can't handover this -1 score to you, your total score will be `1 - (-1) = 2` difference since you have +1 they have -1.
 
 The only way to do this is to be able to handover to opponent an "odd x odd" square (now with white corner in top-left) because this is the only way you can continue this strategy such that they are forced to take the last (top-**right**) white square.
 
 In other words, it's **the only way you can deny them** the "immediately end the game with score 0" option that would otherwise be available.
 
-- If this isn't clear, draw it: you can see how it forces their strategy to become taking even number of columns that score 0 and you take even number of corresponding rows on your turn, always handing over a smaller `x * x` **odd square** until you handover `1 * 1` white square to opponent.
+- If this isn't clear, draw it: you can see how it forces their strategy to become taking even number of columns that score 0 and you take even number of corresponding rows on your turn, always handing over a smaller `side x side` **odd square** until you handover `1 x 1` white square to opponent.
 
 This "special" strategy is accessible on opponent's turn if they can take from their dimension an even number of "columns" such that the reduced amount leftover matches the smaller other dimension leftover:
 
