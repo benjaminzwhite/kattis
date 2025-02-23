@@ -100,6 +100,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Orderly Class - Kattis: orderlyclass](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/orderlyclass.md)
 - [ETA - Kattis: eta](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/eta.md)
 - [Delft Distance - Kattis: delftdistance](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/delftdistance.md)
+- [Irrational Division - Kattis: irrationaldivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/irrationaldivision.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
