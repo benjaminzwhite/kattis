@@ -102,6 +102,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Delft Distance - Kattis: delftdistance](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/delftdistance.md)
 - [Irrational Division - Kattis: irrationaldivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/irrationaldivision.md)
 - [Pianino - Kattis: pianino](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/pianino.md)
+- [Reservoir - Kattis: reservoir](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/reservoir.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
