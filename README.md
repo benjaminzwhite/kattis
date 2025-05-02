@@ -103,11 +103,11 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Irrational Division - Kattis: irrationaldivision](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/irrationaldivision.md)
 - [Pianino - Kattis: pianino](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/pianino.md)
 - [Reservoir - Kattis: reservoir](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/reservoir.md)
+- [LCM Pair Sum - Kattis: lcmpairsum](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/lcmpairsum.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
-- LCM Pair Sum
   
 </details>
