@@ -110,5 +110,6 @@ Exercises which I found particularly interesting for some reason, and decided to
 <summary>Current list of exercises to write-up</summary>
   
 - Ocean Monument
+- Brick Wall (redo the dynamic programming approach)
   
 </details>
