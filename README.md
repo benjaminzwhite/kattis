@@ -106,6 +106,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [LCM Pair Sum - Kattis: lcmpairsum](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/lcmpairsum.md)
 - [Eidam-Sand Lair - Kattis: eidamsandlair](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/eidamsandlair.md)
 - [Andrew the Ant - Kattis: andrewant](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/andrewant.md)
+- [Cake - Kattis: cake](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/cake.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
