@@ -108,6 +108,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Andrew the Ant - Kattis: andrewant](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/andrewant.md)
 - [Cake - Kattis: cake](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/cake.md)
 - [Frogger - Kattis: frogger](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/frogger.md)
+- [Mathemagicians- Kattis: mathemagicians](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/mathemagicians.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
