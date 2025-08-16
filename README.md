@@ -112,6 +112,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Antenna Analysis - Kattis: antennaanalysis](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/antennaanalysis.md)
 - [Divisors - Kattis: divisors](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/divisors.md)
 - [Abandoned Animal - Kattis: abandonedanimal](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/abandonedanimal.md)
+- [Gladiators - Kattis: gladiators](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/gladiators.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
