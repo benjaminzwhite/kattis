@@ -113,6 +113,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Divisors - Kattis: divisors](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/divisors.md)
 - [Abandoned Animal - Kattis: abandonedanimal](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/abandonedanimal.md)
 - [Gladiators - Kattis: gladiators](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/gladiators.md)
+- [Zbrka - Kattis: zbrka](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/zbrka.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
