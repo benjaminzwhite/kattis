@@ -114,11 +114,11 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Abandoned Animal - Kattis: abandonedanimal](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/abandonedanimal.md)
 - [Gladiators - Kattis: gladiators](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/gladiators.md)
 - [Zbrka - Kattis: zbrka](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/zbrka.md)
+- [Ocean Monument - Kattis: oceanmonument](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/oceanmonument.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
   
-- Ocean Monument
 - Brick Wall (redo the dynamic programming approach)
   
 </details>
