@@ -115,6 +115,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Gladiators - Kattis: gladiators](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/gladiators.md)
 - [Zbrka - Kattis: zbrka](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/zbrka.md)
 - [Ocean Monument - Kattis: oceanmonument](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/oceanmonument.md)
+- [Stacking Up - Kattis: stackingup](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/stackingup.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
