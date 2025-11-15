@@ -118,6 +118,7 @@ Exercises which I found particularly interesting for some reason, and decided to
 - [Stacking Up - Kattis: stackingup](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/stackingup.md)
 - [The End of the World - Kattis: endoftheworld](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/endoftheworld.md)
 - [WordSpin - Kattis: wordspin](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/wordspin.md)
+- [Permutation Descent Counts - Kattis: permutationdescent](https://github.com/benjaminzwhite/kattis/blob/main/detailed_solutions/permutationdescent.md)
 
 <details>
 <summary>Current list of exercises to write-up</summary>
